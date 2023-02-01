@@ -31,7 +31,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F6DA31;
+    background-color: #E9A2A9;
     padding: 10px 0;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
@@ -41,7 +41,7 @@ section {
     width: 100%;
     padding: 10px 0;
     border-bottom: 1px solid #000000;
-    background-color: #5FC3A5;
+    background-color: #F6DA31;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +60,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E9A2A9;
+    background-color: #5FC3A5;
     padding: 10px 0;
     border-bottom: 1px solid #000000;
 }
