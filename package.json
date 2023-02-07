@@ -1,0 +1,23 @@
+{
+  "name": "airqualityweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "anjas": "node src/app/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerdyDiatmika/airqualityweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerdyDiatmika/airqualityweb/issues"
+  },
+  "homepage": "https://github.com/FerdyDiatmika/airqualityweb#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
