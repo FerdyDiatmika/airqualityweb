@@ -24,8 +24,18 @@ h5 {
     font-weight: 400;
     font-size: 1em;
 }
+a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #000000;
+}
+a:hover {
+    color: #FFFFFF;
+}
 
-header {
+nav {
+    height: 8vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -35,6 +45,18 @@ header {
     padding: 10px 0;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav li {
+    list-style-type: none;
+}
+nav a {
+    height: 100px;
+    padding: 100px 15px;
 }
 
 section {
@@ -49,7 +71,6 @@ section {
 }
 .map-container {
     width: 1100px;
-    height: 80vh;
     background-color: #e0e0e0;
     border: 1px solid #000000;
 }
@@ -63,4 +84,8 @@ footer {
     background-color: #5FC3A5;
     padding: 10px 0;
     border-bottom: 1px solid #000000;
+}
+footer h1 {
+    max-width: 1000px;
+    text-align: center;
 }

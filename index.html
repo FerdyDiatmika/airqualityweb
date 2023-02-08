@@ -14,16 +14,24 @@
 </head>
 
 <body>
-    <header>
-        <h1>Our team name</h1>
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reiciendis.</h5>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="">PM 2.5</a></li>
+            <li><a href="">PM 10</a></li>
+            <li><a href="">Ozone</a></li>
+            <li><a href="">NO2</a></li>
+            <li><a href="">SO2</a></li>
+            <li><a href="">CO</a></li>
+        </ul>
+    </nav>
     <section>
-        <h5>Lorem ipsum dolor sit amet consectetur.</h5>
-        <span id="city-aqi-container"></span>
-        <div id='map' style='height:1100px;' />
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <h1>Data Name</h1>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reiciendis.</h5>
 
+        <!-- the map -->
+        <span id="city-aqi-container"></span>
+        <div id='map' style='height:80vh;' />
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
         <script>
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: new google.maps.LatLng(51.505, -0.09),
@@ -45,9 +53,11 @@
         <div class="map-container" id="cuaca"></div>
     </section>
     <footer>
-        <h1>This is footer</h1>
+        <h1>We Are Airthru SMANSA</h1>
         <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
     </footer>
+
+    <!-- js -->
     <script type="text/javascript" charset="utf-8">
         (function (w, d, t, f) {
             w[f] = w[f] || function (c, k, n) {
