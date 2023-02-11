@@ -26,7 +26,7 @@
         </ul>
     </nav>
     <section>
-        <h1>Air Quality Index</h1>
+        <h1>PM 2.5</h1>
         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, reiciendis.</h5>
 
         <!-- the map -->
@@ -43,7 +43,7 @@
             var t = new Date().getTime();
             var waqiMapOverlay = new google.maps.ImageMapType({
                 getTileUrl: function (coord, zoom) {
-                    return 'https://tiles.aqicn.org/tiles/usepa-aqi/' + zoom + "/" + coord.x + "/" + coord
+                    return 'https://tiles.aqicn.org/tiles/usepa-pm25/' + zoom + "/" + coord.x + "/" + coord
                         .y + ".png?token=9c03d80dc5bc4c873966b88600d3e7a29bb72d41";
                 },
                 name: "Air  Quality",
