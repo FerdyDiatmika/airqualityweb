@@ -7,6 +7,10 @@
     background-color: #BDA0ED;
     color: #ffffff;
 }
+#map {
+    height: 80vh;
+    width: 85vw;
+}
 body {
     width: 100%;
     display: flex;
@@ -34,6 +38,9 @@ a {
 a:hover {
     color: #FFFFFF;
 }
+.content-container {
+    max-width: 85vw;
+}
 
 
 /* nav bar */
@@ -45,9 +52,9 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #E9A2A9;
-    padding: 10px 0;
     border-bottom: 1px solid #000000;
     border-top: 1px solid #000000;
+    z-index: 99999;
 }
 nav ul {
     display: flex;
@@ -59,7 +66,73 @@ nav li {
 }
 nav a {
     height: 100px;
-    padding: 100px 15px;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+/* burger */
+.burger {
+    display: none;
+}
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #212738;
+    margin: 6px;
+}
+
+/* burger-start */
+@media screen and (max-width:680px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 8vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        opacity: 0;
+        display: none;
+        z-index: 9999;
+        background-color: #E9A2A9;
+        gap: 30px
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+.nav-active {
+    transform: translateX(0%);
+    opacity: 1;
+    display: flex;
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
 }
 
 /* main content */
@@ -141,4 +214,8 @@ footer {
 footer h1 {
     max-width: 1000px;
     text-align: center;
+}
+footer h5 {
+    
+    margin-bottom: 50px;
 }

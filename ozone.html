@@ -15,7 +15,8 @@
 
 <body>
     <nav>
-        <ul>
+        <div class="content-container">
+        <ul class="nav-links">
             <li><a href="./index.html">AQI</a></li>
             <li><a href="./pm25.html">PM 2.5</a></li>
             <li><a href="./pm10.html">PM 10</a></li>
@@ -24,10 +25,19 @@
             <li><a href="./so2.html">SO2</a></li>
             <li><a href="./co.html">CO</a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
     </nav>
     <section>
-        <h1>Ozone</h1>
-        <h5>Real-time world air quality monitor</h5>
+        <div class="content-container">
+
+            <h1>Ozone</h1>
+            <h5>Real-time world air quality monitor</h5>
+        </div>
         <Details>
             <div class="info-container">
                 <h5>Index</h5>
@@ -71,8 +81,11 @@
         <div class="map-container" id="cuaca"></div>
     </section>
     <footer>
-        <h1>Care-living with us</h1>
-        <h5>This site was built by Wahyu Sattriana and Ferdy Diatmika due to physics assignment</h5>
+        <div class="content-container">
+
+            <h1>Caringwith us</h1>
+            <h5>This site was built by Wahyu Sattriana and Ferdy Diatmika due to physics assignment</h5>
+        </div>
     </footer>
 
     <!-- js -->
@@ -91,7 +104,7 @@
             };
         })(window, document, 'script', '_aqiFeed');
     </script>
-    <script src="./src/app/app.js"></script>
+    <script src="./src/app/nav-burger.js"></script>
 </body>
 
 </html>
