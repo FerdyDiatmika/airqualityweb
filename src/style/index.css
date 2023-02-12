@@ -1,3 +1,4 @@
+/* basic configuration */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -17,7 +18,7 @@ h1 {
     font-family: 'Press Start 2P', cursive;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 3em;
+    font-size: 2em;
 }
 h5 {
     font-family: 'Space Grotesk', sans-serif;
@@ -34,6 +35,8 @@ a:hover {
     color: #FFFFFF;
 }
 
+
+/* nav bar */
 nav {
     height: 8vh;
     width: 100%;
@@ -59,6 +62,7 @@ nav a {
     padding: 100px 15px;
 }
 
+/* main content */
 section {
     width: 100%;
     padding: 10px 0;
@@ -69,12 +73,61 @@ section {
     justify-content: center;
     align-items: center;
 }
-.map-container {
-    width: 1100px;
-    background-color: #e0e0e0;
-    border: 1px solid #000000;
+
+/* content detail */
+Details {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    background-color: lightblue;
+}
+.info-container {
+    width: 85vw;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 1fr;
+    gap: 5px;
+    padding: 5px;
+    background-color: white;
+}
+.info-container .green {
+    background-color: #009865;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+.info-container .yellow {
+    background-color: #FEDE33;
+    border: 1px solid black;
+    padding: 10px;
+}
+.info-container .orange {
+    background-color: #FE9936;
+    border: 1px solid black;
+    padding: 10px;
+}
+.info-container .red {
+    background-color: #CC0033;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+.info-container .purple {
+    background-color: #670099;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+.info-container .maroon {
+    background-color: #7E0123;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
 }
 
+/* footer */
 footer {
     width: 100%;
     display: flex;
