@@ -11,27 +11,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500&display=swap"
         rel="stylesheet">
-        <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
 </head>
 
 <body>
     <nav>
         <div class="content-container">
-        <ul class="nav-links">
-            <li><a href="./index.html">AQI</a></li>
-            <li><a href="./pm25.html">PM 2.5</a></li>
-            <li><a href="./pm10.html">PM 10</a></li>
-            <li><a href="./ozone.html">Ozone</a></li>
-            <li><a href="./no2.html">NO2</a></li>
-            <li><a href="./so2.html">SO2</a></li>
-            <li><a href="./co.html">CO</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+            <ul class="nav-links">
+                <li><a href="./index.html">AQI</a></li>
+                <li><a href="./pm25.html">PM 2.5</a></li>
+                <li><a href="./pm10.html">PM 10</a></li>
+                <li><a href="./ozone.html">Ozone</a></li>
+                <li><a href="./no2.html">NO2</a></li>
+                <li><a href="./so2.html">SO2</a></li>
+                <li><a href="./co.html">CO</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>
-    </div>
     </nav>
     <section>
         <div class="content-container">
@@ -84,27 +84,10 @@
     <footer>
         <div class="content-container">
             <h1>Caring with us</h1>
-        <h5>This site was built by Wahyu Sattriana and Ferdy Diatmika due to physics assignment</h5>
+            <h5>This site was built by Wahyu Sattriana and Ferdy Diatmika due to physics assignment</h5>
         </div>
-        
-    </footer>
 
-    <!-- js -->
-    <script type="text/javascript" charset="utf-8">
-        (function (w, d, t, f) {
-            w[f] = w[f] || function (c, k, n) {
-                s = w[f], k = s['k'] = (s['k'] || (k ? ('&k=' + k) : ''));
-                s['c'] =
-                    c = (c instanceof Array) ? c : [c];
-                s['n'] = n = n || 0;
-                L = d.createElement(t), e = d.getElementsByTagName(t)[0];
-                L.async = 1;
-                L.src = '//feed.aqicn.org/feed/' + (c[n].city) + '/' + (c[n].lang || '') + '/feed.v1.js?n=' +
-                    n + k;
-                e.parentNode.insertBefore(L, e);
-            };
-        })(window, document, 'script', '_aqiFeed');
-    </script>
+    </footer>
     <script src="./src/app/nav-burger.js"></script>
 </body>
 
