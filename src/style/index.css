@@ -152,7 +152,8 @@ Details {
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 400;
     font-size: 1.2em;
-    background-color: lightblue;
+    background-color: #add8e6;
+    margin-bottom: 10px;
 }
 .info-container {
     width: 85vw;
