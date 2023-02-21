@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
     <title>Air Quality</title>
     <link rel="stylesheet" href="./src/style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +15,11 @@
 </head>
 
 <body>
+    <!-- <span id="preloader"></span> -->
     <nav>
         <div class="content-container">
             <ul class="nav-links">
                 <li><a href="./index.html">AQI</a></li>
-                <li><a href="./pm25.html">PM 2.5</a></li>
-                <li><a href="./pm10.html">PM 10</a></li>
                 <li><a href="./ozone.html">Ozone</a></li>
                 <li><a href="./no2.html">NO2</a></li>
                 <li><a href="./so2.html">SO2</a></li>
@@ -56,7 +55,6 @@
                 <div class="index-name maroon">Beracun</div>
             </div>
         </Details>
-
         <!-- Widget -->
         <script type="text/javascript" charset="utf-8">
             (function (w, d, t, f) {
@@ -74,16 +72,6 @@
                 };
             })(window, document, 'script', '_aqiFeed');
         </script>
-        <span id="city-aqi-container"></span>
-
-        <script type="text/javascript" charset="utf-8">
-            _aqiFeed({
-                container: 'city-aqi-container',
-                display: '%details',
-                city: 'jakarta',
-            });
-        </script>
-
         <!-- the map -->
         <span id="city-aqi-container"></span>
         <div id='map' style='height:80vh; width:85vw;' />
