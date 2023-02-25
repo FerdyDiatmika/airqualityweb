@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500&display=swap"
         rel="stylesheet">
+    <script src="src/app/map.js"></script>
     <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
 </head>
 
@@ -36,6 +37,8 @@
             <h1>Air Quality Index</h1>
             <h5>Real-time world air quality monitor</h5>
         </div>
+
+        <!-- details -->
         <Details>
             <div class="info-container">
                 <h5>Index</h5>
@@ -57,10 +60,11 @@
 
         <!-- the map -->
         <span id="city-aqi-container"></span>
-        <div id='map' style='height:80vh; width:85vw;' />
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <div id='map' style='height:80vh; width:85vw;'></div>
         <script src="/src/app/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
         <div class="map-container" id="cuaca"></div>
+
     </section>
 
     <!-- footer -->
